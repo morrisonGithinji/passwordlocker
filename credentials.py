@@ -10,3 +10,13 @@ class Credentials:
     self.account =account
     self.user =user
     self.usercode =usercode
+
+    def save_credentials(self)
+    """
+    save user credentials in the credential list
+    """
+    Credentials.credentials_list.append(self)
+
+  
+
+  
