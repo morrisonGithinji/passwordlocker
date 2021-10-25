@@ -27,10 +27,7 @@ class Credentials:
     function to generate password
     """
 
-    def gen-usercode(size=7) :
-        usercode = string.ascii_uppercase + string.ascii_lowercase + string.digits
-        gen_pass = ''.join(random.choice(usercode) for i in range(size))
-        returm gen_pass
+   
 
 
 
