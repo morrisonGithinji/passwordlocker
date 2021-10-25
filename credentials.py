@@ -30,7 +30,15 @@ class Credentials:
     def gen-usercode(size=7) :
         usercode = string.ascii_uppercase + string.ascii_lowercase + string.digits
         gen_pass = ''.join(random.choice(usercode) for i in range(size))
-        returm gen_pass
+        return gen_pass
+
+        @classmethod
+        def display_credentials(cls):
+           """
+           displays credentials list
+           """
+           return  cls.credentials_list
+           
 
 
 
