@@ -1,12 +1,14 @@
 class User :
+"""
+class for initiating new users
+"""
+user_list[]
 
-  def __init__(self,first_name,last_name,phone_number,email):
+def __init__(self, userName,password):
+  self.userName = userName
+  self.password =password
 
-      '''
-      defining properities in the class user
-      '''
-
-        self.first_name = first_name
-        self.last_name = last_name
-        self.phone_number = number
-        self.email = email
+  def save_user(self)
+  """
+  saves user in the user_list
+  "''
