@@ -37,4 +37,14 @@ def display_credentials(credentials):
     """
     reveals user credentials
     """
-    credentials.display_credentials()
+    return Credentials.display_credentials()
+
+def find_account(account):  
+    """"
+    finds account
+    """
+    return Credentials.find_by_account(account)
+
+def check_existing_user(userName, password):
+    verify = User.user_exists(userName,password)
+    return verify
