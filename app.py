@@ -32,3 +32,9 @@ def delete_credentials(credentials):
     to delete credentials
     """
     credentials.delete_credentials()
+
+def display_credentials(credentials):
+    """
+    reveals user credentials
+    """
+    credentials.display_credentials()
