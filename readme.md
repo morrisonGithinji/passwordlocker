@@ -3,7 +3,7 @@ This is the first Independent project for Moringa Core, flask module.
 The project was generated with python3.9
 
 ## Description
-Password locker is an application use to manage account credentials and passwords
+Password locker is an application used to manage account credentials and passwords
 
 ## Author
 Morrison Njenga
