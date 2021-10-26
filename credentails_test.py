@@ -1,14 +1,14 @@
 import unittest
 from credentials import Credentials
-
+from user import User
 class TestCredentials(unittest.TestCase):
   
   def setUp(self):
     
     
-    self.new_credentials = Credentials("twitter","morris","sirrom")
+   self.new_credentials = Credentials("twitter","morris","sirrom")
   def tearDown(self):  
-    Credentials.credentials_list=[]  
+   Credentials.credentials_list=[]  
       
   def test_init(self):
     '''
