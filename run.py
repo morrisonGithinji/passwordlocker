@@ -66,33 +66,32 @@ def main():
   
   print(f"Welcome {user_name},how do you wanna continue")
   print('\n') 
-
-while True:
+  while True:
     print("Enter one of these short codes to go forward : ca - create an account, lg - to login, ex - to exit, cc - to create your credentials,  del  - to delete your credentials, dc - to display contacts, ex - to exit")
     
     short_code = input().lower()
     
     if short_code == 'ca':
-          print("New User")
-          print("-"*10)
-          print ("create username")
-          created_username = input()
+      print("New User")
+      print("-"*10)
+      print ("create username")
+      created_username = input()
           
-          print ("create password")
-          created_password = input ()
+      print ("create password")
+      created_password = input ()
           
-          print ("confirm password")
-          confirm_password = input()
+      print ("confirm password")
+      confirm_password = input()
           
-          if created_password == confirm_password :
+      if created_password == confirm_password :
             
-            save_user(create_user(created_username, created_password))
-            print(f"New_User")
+        save_user(create_user(created_username, created_password))
+        print(f"New_User")
             
-            print(f"Account for {created_username} successfully created. Proceed to Login using lg shortcode")
+        print(f"Account for {created_username} successfully created. Proceed to Login using lg shortcode")
             
 
-          else:
+      else:
             print ("invalid username or password")
             
     elif short_code == 'lg':
@@ -139,17 +138,17 @@ if save_credentials:
    
   
 elif short_code == 'del':
-         print ("Enter account of credential to delete")
-         search_account = input()
+    print ("Enter account of credential to delete")
+    search_account = input()
         
-if find_account(search_account):
+    if find_account(search_account):
         found_account = find_account(search_account)
         # delete_credentials(search_account)
         found_account.delete_credentials()
         print (f"credentials deleted")
         
       
-else:
+    else:
         print(f"Enter valid account name")  
         
 elif short_code == 'dc':
