@@ -58,3 +58,10 @@ def generate_usercode():
   '''
   gen_code =Credentials.gen_usercode()
   return gen_code
+
+def main():
+  print ("Hello and welcome to Password Locker. Please enter your name")
+  user_name = input()
+  
+  print(f"Welcome {user_name},how do you wanna continue")
+  print('\n')
