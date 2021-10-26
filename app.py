@@ -46,5 +46,15 @@ def find_account(account):
     return Credentials.find_by_account(account)
 
 def check_existing_user(userName, password):
+    """
+    verify user
+    """
     verify = User.user_exists(userName,password)
     return verify
+
+def generate_usercode():
+  '''
+  autogenerates usercode
+  '''
+  gen_code =Credentials.gen_usercode()
+  return gen_code
